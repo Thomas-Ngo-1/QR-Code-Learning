@@ -1,0 +1,7 @@
+# Ignore Python virtual environment folder
+venv/
+
+# Ignore the app.py file (used for Flask, not needed for GitHub Pages)
+app.py
+
+qr-code-component-main
