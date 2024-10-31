@@ -1,36 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" href="{{ url_for('static', filename='images/favicon-32x32.png') }}" type="image/png">
-
-  
-  <title>Frontend Mentor | QR code component</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <link rel="stylesheet" href="/static/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Image Grid</title>
 </head>
 <body>
-  <div class="qr-box">
-    <div>
-      <img style="border-radius: 1rem;" src="/static/images/image-qr-code.png" alt="QR-Code" width= "100%">
-    </div>
 
-    <div style= "margin-top: 10px">
-      <center style="font-weight: bold;">Imparove your front-end skills by building projects</center>
+  <style>
+    /* Base styles for both versions */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
 
-      <span>Scan the QR code tasdoas visit Frontend Mentor and take your coding skills to the next level</span>
-    
-    </div>
-  </div>
+    /* Styles for desktop version */
+    .desktop {
+        display: block; /* Show by default */
+    }
+    .mobile {
+        display: none; /* Hide by default */
+    }
 
-  <div class="attribution">
-    Challenge as <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Thomas Ngo</a>.
-  </div>
+    /* Media query for mobile version */
+    @media (max-width: 768px) {
+        .desktop {
+            display: none; /* Hide desktop version on small screens */
+        }
+        .mobile {
+            display: block; /* Show mobile version */
+        }
+    }
+  </style>
+<div class="desktop">
+<table width="100%">
+        <tr>
+            <!-- 1st Column -->
+            <td valign="top">
+                <table width="100%">
+                    <tr><td><img src="https://ruler.com.vn/wp-content/uploads/2024/10/z5963563051423_ec633f2dbb1e36eb0deb419d2ecb7eda.jpg" alt="Image 1" style="width: 100%; height: auto; object-fit: cover;"></td></tr>
+                    <tr><td><img src="https://ruler.com.vn/wp-content/uploads/2024/10/z5963563051423_ec633f2dbb1e36eb0deb419d2ecb7eda.jpg" alt="Image 2" style="width: 100%; height: auto; object-fit: cover;"></td></tr>
+                    <tr><td><img src="https://ruler.com.vn/wp-content/uploads/2024/10/Artboard-2-1.png" alt="Image 3" style="width: 100%; height: auto; object-fit: cover;"></td></tr>
+                    <tr><td><img src="https://ruler.com.vn/wp-content/uploads/2024/10/Artboard-2-1.png" alt="Image 3" style="width: 100%; height: auto; object-fit: cover;"></td></tr>
+                </table>
+            </td>
+
+            <!-- 2nd Column -->
+            <td valign="top">
+                <table width="100%">
+                    <tr><td><img src="https://ruler.com.vn/wp-content/uploads/2024/10/Artboard-2-1.png" alt="Image 4" style="width: 100%; height: auto; object-fit: cover;"></td></tr>
+                    <tr><td><img src="https://ruler.com.vn/wp-content/uploads/2024/10/Artboard-2-1.png" alt="Image 5" style="width: 100%; height: auto; object-fit: cover;"></td></tr>
+                    <tr><td><img src="https://ruler.com.vn/wp-content/uploads/2024/10/z5963563051423_ec633f2dbb1e36eb0deb419d2ecb7eda.jpg" alt="Image 6" style="width: 100%; height: auto; object-fit: cover;"></td></tr>
+                    <tr><td><img src="https://ruler.com.vn/wp-content/uploads/2024/10/Artboard-2-1.png" alt="Image 7" style="width: 100%; height: auto; object-fit: cover;"></td></tr>
+                    <tr><td><img src="https://ruler.com.vn/wp-content/uploads/2024/10/Artboard-2-1.png" alt="Image 3" style="width: 100%; height: auto; object-fit: cover;"></td></tr>
+                </table>
+            </td>
+
+            <!-- 3rd Column -->
+            <td valign="top">
+                <table width="100%">
+                    <tr><td><img src="https://ruler.com.vn/wp-content/uploads/2024/10/z5963563051423_ec633f2dbb1e36eb0deb419d2ecb7eda.jpg" alt="Image 8" style="width: 100%; height: auto; object-fit: cover;"></td></tr>
+                    <tr><td><img src="https://ruler.com.vn/wp-content/uploads/2024/10/z5963563051423_ec633f2dbb1e36eb0deb419d2ecb7eda.jpg" alt="Image 9" style="width: 100%; height: auto; object-fit: cover;"></td></tr>
+                    <tr><td><img src="https://ruler.com.vn/wp-content/uploads/2024/10/Artboard-2-1.png" alt="Image 10" style="width: 100%; height: auto; object-fit: cover;"></td></tr>
+                    <tr><td><img src="https://ruler.com.vn/wp-content/uploads/2024/10/Artboard-2-1.png" alt="Image 3" style="width: 100%; height: auto; object-fit: cover;"></td></tr>
+                </table>
+            </td>
+        </tr>
+</table>
+</div>
+
+<div class="mobile">
+  <img src="https://ruler.com.vn/wp-content/uploads/2024/10/z5963563051423_ec633f2dbb1e36eb0deb419d2ecb7eda.jpg" alt="Image 1" style="width: 100%; height: auto; object-fit: cover;">
+  <img src="https://ruler.com.vn/wp-content/uploads/2024/10/z5963563051423_ec633f2dbb1e36eb0deb419d2ecb7eda.jpg" alt="Image 1" style="width: 100%; height: auto; object-fit: cover;">
+  <img src="https://ruler.com.vn/wp-content/uploads/2024/10/z5963563051423_ec633f2dbb1e36eb0deb419d2ecb7eda.jpg" alt="Image 1" style="width: 100%; height: auto; object-fit: cover;">
+  <img src="https://ruler.com.vn/wp-content/uploads/2024/10/z5963563051423_ec633f2dbb1e36eb0deb419d2ecb7eda.jpg" alt="Image 1" style="width: 100%; height: auto; object-fit: cover;">
+  <img src="https://ruler.com.vn/wp-content/uploads/2024/10/z5963563051423_ec633f2dbb1e36eb0deb419d2ecb7eda.jpg" alt="Image 1" style="width: 100%; height: auto; object-fit: cover;">
+  <img src="https://ruler.com.vn/wp-content/uploads/2024/10/z5963563051423_ec633f2dbb1e36eb0deb419d2ecb7eda.jpg" alt="Image 1" style="width: 100%; height: auto; object-fit: cover;">
+  <img src="https://ruler.com.vn/wp-content/uploads/2024/10/z5963563051423_ec633f2dbb1e36eb0deb419d2ecb7eda.jpg" alt="Image 1" style="width: 100%; height: auto; object-fit: cover;">
+  <img src="https://ruler.com.vn/wp-content/uploads/2024/10/z5963563051423_ec633f2dbb1e36eb0deb419d2ecb7eda.jpg" alt="Image 1" style="width: 100%; height: auto; object-fit: cover;">
+
+</div>
 </body>
-</html>
