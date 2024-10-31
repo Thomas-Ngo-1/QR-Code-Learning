@@ -1,0 +1,39 @@
+body {
+    background-color: hsl(212, 45%, 89%);  /* Slate 300 */
+    font-family: "Outfit";
+    font-size: 15px;
+    font-weight: 400px;
+}
+div span {
+    padding-top: 10px;
+    text-align: center;
+    display: inline-block; /* Ensure the padding applies properly */
+}
+.qr-image{
+    border-radius: 1rem;
+}
+.slate300 {
+    background-color: hsl(212, 45%, 89%);  /* Slate 300 */
+}
+
+.slate500 {
+    background-color: hsl(216, 15%, 48%);  /* Slate 500 */
+}
+
+.slate900 {
+    background-color: hsl(218, 44%, 22%);  /* Slate 900 */
+}
+
+.qr-box{
+    position: fixed;
+    inset: 0px;
+    width: 12rem;
+    height: fit-content;
+    max-height: 100dvh;
+    margin: auto;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
+
